@@ -1,0 +1,7 @@
+---
+title: "ESA2025_animal_movement_workshop"
+---
+
+Welcome to the landing page for the ESA2025 Movement Ecology Hackathon: A dingo case study!
+
+To get started with the materials for this workshop, please visit the [Getting Started](about.qmd) page.
