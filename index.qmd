@@ -1,12 +1,12 @@
 ---
-title: "ESA2025_animal_movement_workshop"
-author: 
-  - name: "Scott Forrest"
-    url: https://swforrest.github.io/
-    orcid: 0000-0001-9529-0108
-    affiliation: Queensland University of Technology, CSIRO
-    email: "scottwforrest@gmail.com"
-date: "`r Sys.Date()`"
+title: "ESA2025 Movement Ecology Hackathon: A dingo case study"
+# author: 
+#   - name: "Scott Forrest"
+#     url: https://swforrest.github.io/
+#     orcid: 0000-0001-9529-0108
+#     affiliation: Queensland University of Technology, CSIRO
+#     email: "scottwforrest@gmail.com"
+date: today
 execute: 
   cache: false
 bibliography: paperpile_references.bib
@@ -33,5 +33,7 @@ abstract: |
 ---
 
 Welcome to the landing page for the ESA2025 Movement Ecology Hackathon: A dingo case study!
+
+![Photo by Alexander Babych - from <https://babych.au/wild-and-unfiltered-a-closer-look-at-the-dingoes-of-the-tanami-desert/>](images/dingo_tanami.jpg)
 
 To get started with the materials for this workshop, please visit the [Getting Started](about.qmd) page.

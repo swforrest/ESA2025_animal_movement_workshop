@@ -1,5 +1,5 @@
 ---
-title: "Getting Started"
+title: "Workshop Overview"
 # author: 
 #   - name: "Scott Forrest"
 #     url: https://swforrest.github.io/
@@ -32,12 +32,23 @@ abstract: |
   
 ---
 
-First, it will be helpful to access the full code repository for this workshop. There are a couple ways to do this.
+## Quarto
 
-1. **Fork the repository on GitHub**:
-Go to the GitHub page for this repository: <https://github.com/swforrest/ESA2025_animal_movement_workshop>
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
-2. **Download the repository as a ZIP file**:
-You can do this by clicking on the green "Code" button at the top right of the GitHub page and selecting "Download ZIP". Once downloaded, unzip the file to a location on your computer where you can easily find it.
+## Running Code
 
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this 
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).

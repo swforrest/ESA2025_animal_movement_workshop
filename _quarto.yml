@@ -7,11 +7,18 @@ freeze: auto  # re-render only when source changes
 # website level options
 website:
   title: "ESA2025 Movement Ecology Hackathon"
+  favicon: images/dingo_icon.png
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - workshop_overview.qmd
+      - data_study_system.qmd
+      
+    right:
+      - icon: github
+        href: https://github.com/swforrest/ESA2025_animal_movement_workshop
 
 format:
   html:

@@ -1,0 +1,17 @@
+{
+  "hash": "73834c6c3f2a982b69fc1043edf8de4e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Workshop Overview\"\n# author: \n#   - name: \"Scott Forrest\"\n#     url: https://swforrest.github.io/\n#     orcid: 0000-0001-9529-0108\n#     affiliation: Queensland University of Technology, CSIRO\n#     email: \"scottwforrest@gmail.com\"\ndate: today\nexecute: \n  cache: false\nbibliography: paperpile_references.bib\ntoc: true\nnumber-sections: false\nformat: \n  html:\n    self-contained: true\n    code-fold: show\n    code-tools: true\n    df-print: paged\n    code-line-numbers: true\n    code-overflow: scroll\n    fig-format: png\n    fig-dpi: 300\n  pdf:\n    geometry: \n      - top=30mm\n      - left=30mm\neditor:\n  source\nabstract: |\n  \n---\n\n## Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.\n\n## Running Code\n\nWhen you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n\n\nYou can add options to executable code like this \n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 4\n```\n\n\n:::\n:::\n\n\nThe `echo: false` option disables the printing of code (only output is displayed).\n",
+    "supporting": [
+      "workshop_overview_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": null,
+    "postProcess": false
+  }
+}
