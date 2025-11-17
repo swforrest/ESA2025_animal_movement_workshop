@@ -1,0 +1,73 @@
+---
+title: "Getting Started"
+# author: 
+#   - name: "Scott Forrest"
+#     url: https://swforrest.github.io/
+#     orcid: 0000-0001-9529-0108
+#     affiliation: Queensland University of Technology, CSIRO
+#     email: "scottwforrest@gmail.com"
+date: today
+execute: 
+  cache: false
+bibliography: paperpile_references.bib
+toc: true
+number-sections: false
+format: 
+  html:
+    self-contained: true
+    code-fold: show
+    code-tools: true
+    df-print: paged
+    code-line-numbers: true
+    code-overflow: scroll
+    fig-format: png
+    fig-dpi: 300
+  pdf:
+    geometry: 
+      - top=30mm
+      - left=30mm
+editor:
+  source
+abstract: |
+  
+---
+
+It will be helpful to access the full repository for this workshop, for the data, covariates and any template scripts to get started. 
+
+There are two ways to do this, by **'forking' the repository on GitHub**, or by **downloading the repository as a ZIP file**. If you want to have a copy of the repository on your GitHub account, which you can push any changes to for version control, then choose the first option.
+
+## Fork the repository on GitHub
+
+*This requires having a GitHub account.*
+
+1. Go to the GitHub page for the repository: <https://github.com/swforrest/ESA2025_movement_ecology_hackathon>
+
+2. Click on the "**Fork**" button at the top right of the page. This will create a copy of the repository in your own GitHub account.
+
+![Forking the original repository](images/fork_screenshot.png)
+
+3. You can then 'clone' this forked repository to your local files. Copying the URL of your forked repository (click on the green "Code" button and copy the URL). *You should do this in your own version of the repository, not the original one, otherwise you won't be able to push your changes*. 
+
+![Copying the repo URL](images/clone_screenshot.png)
+
+4. Then in RStudio go to **File > New Project > Version Control > Git**, and paste in the URL you copied. Choose a local directory to save the project, and click "Create Project".
+
+![File > New project](images/clone_screenshot_2.png)
+
+![Version Control](images/clone_screenshot_3.png)
+
+![Select 'Git'](images/clone_screenshot_4.png)
+You can leave the *Project directory name* blank to let it default to the repository name.
+
+![Paste URL > Select the location to save the repository folder](images/clone_screenshot_5.png)
+
+You should now have a folder on your computer with all of the files, which is linked to a GitHub repository on your own account. You can then make changes to any of the files, and push them to your GitHub repository.
+
+
+## Download the repository as a ZIP file
+
+You can do this by clicking on the green "Code" button at the top right of the GitHub page and selecting "Download ZIP". Once downloaded, unzip the file to a location on your computer where you can easily find it.
+
+This option will give you a copy of the repository on your local computer, but it will not be linked to a GitHub repository, so you won't be able to push any changes to GitHub. Of course, you can create your own repository afterwards and push all of the files there, but in that case it's probably easier to fork the repository first as described above.
+
+

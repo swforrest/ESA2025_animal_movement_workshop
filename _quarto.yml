@@ -13,7 +13,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - getting_started.qmd
       - data_study_system.qmd
       - research_questions.qmd
       - methods.qmd
