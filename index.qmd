@@ -54,4 +54,8 @@ You can download a PDF the slides for this workshop [here]().
 
 # Sharing these resources
 
-Feel free to share these resources! The materials are licensed under a [Creative Commons Attribution 4.0 International (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/), which means you are free to share and adapt the materials as long as you provide appropriate credit.
+Feel free to share these resources! The materials are licensed under aan MIT license, which means you are free to share and adapt the materials as long as you provide appropriate credit.
+
+You can cite these resources using:
+
+Forrest S., Meisuria, N., Cairncross, R., Fuik-Burgemeestre, S., Bentley, L., Cowan, M., & Newsome, T. (2025). swforrest/ESA2025_movement_ecology_hackathon: Workshop release (v1.0). Zenodo. <https://doi.org/10.5281/zenodo.17635592>
