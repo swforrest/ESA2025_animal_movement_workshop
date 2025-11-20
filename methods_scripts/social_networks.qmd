@@ -34,8 +34,8 @@ abstract: |
 
 ## Packages
 
-- `spatsoc` - <https://docs.ropensci.org/spatsoc/index.html> - For generating social networks from animal telemetry data
-- `aniSNA` - <https://www.biorxiv.org/content/10.1101/2024.05.10.593659v1.full> - For animal social network analysis using telemetry data
+- `spatsoc` - <https://docs.ropensci.org/spatsoc/index.html> facilitates spatial social network analysis using animal telemetry data
+- `aniSNA` - <https://www.biorxiv.org/content/10.1101/2024.05.10.593659v1.full> - additional functions for calculating uncertainty in social networks, and permuating networks to compare against a random social network
 - `igraph` - <https://igraph.org/r/> - General package for making network graphs and calculating network metrics
 
 ## Tutorials and resources

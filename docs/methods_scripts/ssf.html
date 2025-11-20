@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-20">
+<meta name="dcterms.date" content="2025-11-21">
 
 <title>Step selection functions (SSF) – ESA2025 Movement Ecology Hackathon</title>
 <style>
@@ -59,6 +59,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
 clear: both;
+margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
 margin-left:2em;
@@ -4007,7 +4008,10 @@ vertical-align: -.125em;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link active" data-scroll-target="#packages">Packages</a></li>
+  <li><a href="#tutorials-and-resources" id="toc-tutorials-and-resources" class="nav-link" data-scroll-target="#tutorials-and-resources">Tutorials and resources</a></li>
+  <li><a href="#useful-papers" id="toc-useful-papers" class="nav-link" data-scroll-target="#useful-papers">Useful papers</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="ssf.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -4027,7 +4031,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 20, 2025</p>
+      <p class="date">November 21, 2025</p>
     </div>
   </div>
   
@@ -4039,10 +4043,55 @@ vertical-align: -.125em;
 </header>
 
 
+<section id="packages" class="level2">
+<h2 class="anchored" data-anchor-id="packages">Packages</h2>
+<ul>
+<li><code>amt</code> - main package for SSFs <span class="citation" data-cites="Signer2019-fi">(<a href="#ref-Signer2019-fi" role="doc-biblioref">Johannes Signer, Fieberg, and Avgar 2019</a>)</span></li>
+</ul>
+</section>
+<section id="tutorials-and-resources" class="level2">
+<h2 class="anchored" data-anchor-id="tutorials-and-resources">Tutorials and resources</h2>
+<p>####<code>amt</code> <strong>preparing data</strong> - <a href="https://cran.r-project.org/web/packages/amt/vignettes/p1_getting_started.html" class="uri">https://cran.r-project.org/web/packages/amt/vignettes/p1_getting_started.html</a></p>
+<section id="amt-fitting-step-selection-functions" class="level4">
+<h4 class="anchored" data-anchor-id="amt-fitting-step-selection-functions"><code>amt</code> <strong>fitting step selection functions</strong></h4>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/amt/vignettes/p4_SSF.html" class="uri">https://cran.r-project.org/web/packages/amt/vignettes/p4_SSF.html</a></li>
+</ul>
+</section>
+</section>
+<section id="useful-papers" class="level2">
+<h2 class="anchored" data-anchor-id="useful-papers">Useful papers</h2>
+<p><span class="citation" data-cites="Fortin2005-zw">(<a href="#ref-Fortin2005-zw" role="doc-biblioref">Fortin et al. 2005</a>)</span> - the OG SSF paper Fortin, D., Beyer, H. L., Boyce, M. S., Smith, D. W., Duchesne, T., &amp; Mao, J. S. (2005). <strong>Wolves influence elk movements: Behavior shapes a trophic cascade in Yellowstone National Park</strong>. Ecology, 86(5), 1320–1330. https://doi.org/10.1890/04-0953</p>
+<p><span class="citation" data-cites="Avgar2016-pb">(<a href="#ref-Avgar2016-pb" role="doc-biblioref">Avgar et al. 2016</a>)</span> - for integrating movement and resource selection (with movement interactions) Avgar, T., Potts, J. R., Lewis, M. A., &amp; Boyce, M. (2016). <strong>Integrated step selection analysis: bridging the gap between resource selection and animal movement</strong>. Methods in Ecology and Evolution, 7(5), 619–630. https://doi.org/10.1111/2041-210x.12528</p>
+<p><span class="citation" data-cites="Fieberg2021-wx">(<a href="#ref-Fieberg2021-wx" role="doc-biblioref">Fieberg et al. 2021</a>)</span> - helpful guide for interpreting parameters in RSFs and SSFs Fieberg, J., Signer, J., Smith, B., &amp; Avgar, T. (2021). <strong>A “How to” guide for interpreting parameters in habitat-selection analyses</strong>. The Journal of Animal Ecology, 90(5), 1027–1043. https://doi.org/10.1111/1365-2656.13441</p>
+<p><span class="citation" data-cites="Signer2023-wm">(<a href="#ref-Signer2023-wm" role="doc-biblioref">J. Signer et al. 2023</a>)</span> - for generating simulations from SSFs Signer, J., Fieberg, J., Reineking, B., Schlägel, U., Smith, B., Balkenhol, N., &amp; Avgar, T. (2023). <strong>Simulating animal space use from fitted integrated Step‐Selection Functions (iSSF)</strong>. Methods in Ecology and Evolution. https://doi.org/10.1111/2041-210x.14263</p>
+<p><span class="citation" data-cites="Hofmann2023-ii">(<a href="#ref-Hofmann2023-ii" role="doc-biblioref">Hofmann et al. 2023</a>)</span> - full workflow from fitting SSFs, running simulations, and calculating connectivity Hofmann, D. D., Cozzi, G., McNutt, J. W., Ozgul, A., &amp; Behr, D. M. (2023). <strong>A three-step approach for assessing landscape connectivity via simulated dispersal: African wild dog case study</strong>. Landscape Ecology, 38(4), 981–998. https://doi.org/10.1007/s10980-023-01602-4</p>
+<p><span class="citation" data-cites="Michelot2024-jm">(<a href="#ref-Michelot2024-jm" role="doc-biblioref">Michelot et al. 2024</a>)</span> - a helpful conceptual overview of what SSFs are and how they’re estimated Michelot, T., Klappstein, N. J., Potts, J. R., &amp; Fieberg, J. (2024). <strong>Understanding step selection analysis through numerical integration</strong>. Methods in Ecology and Evolution, 15(1), 24–35. https://doi.org/10.1111/2041-210x.14248</p>
+</section>
 <section id="references" class="level1">
 <h1>References</h1>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Avgar2016-pb" class="csl-entry" role="listitem">
+Avgar, Tal, Jonathan R Potts, Mark A Lewis, and Mark Boyce. 2016. <span>“<span class="nocase">Integrated step selection analysis: bridging the gap between resource selection and animal movement</span>.”</span> <em>Methods in Ecology and Evolution</em> 7 (May): 619–30. <a href="https://doi.org/10.1111/2041-210x.12528">https://doi.org/10.1111/2041-210x.12528</a>.
+</div>
+<div id="ref-Fieberg2021-wx" class="csl-entry" role="listitem">
+Fieberg, John, Johannes Signer, Brian Smith, and Tal Avgar. 2021. <span>“<span class="nocase">A ’How to’ guide for interpreting parameters in habitat-selection analyses</span>.”</span> <em>The Journal of Animal Ecology</em> 90 (May): 1027–43. <a href="https://doi.org/10.1111/1365-2656.13441">https://doi.org/10.1111/1365-2656.13441</a>.
+</div>
+<div id="ref-Fortin2005-zw" class="csl-entry" role="listitem">
+Fortin, Daniel, Hawthorne L Beyer, Mark S Boyce, Douglas W Smith, Thierry Duchesne, and Julie S Mao. 2005. <span>“<span class="nocase">Wolves influence elk movements: Behavior shapes a trophic cascade in Yellowstone National Park</span>.”</span> <em>Ecology</em> 86 (May): 1320–30. <a href="https://doi.org/10.1890/04-0953">https://doi.org/10.1890/04-0953</a>.
+</div>
+<div id="ref-Hofmann2023-ii" class="csl-entry" role="listitem">
+Hofmann, David D, Gabriele Cozzi, John W McNutt, Arpat Ozgul, and Dominik M Behr. 2023. <span>“<span class="nocase">A three-step approach for assessing landscape connectivity via simulated dispersal: African wild dog case study</span>.”</span> <em>Landscape Ecology</em> 38 (February): 981–98. <a href="https://doi.org/10.1007/s10980-023-01602-4">https://doi.org/10.1007/s10980-023-01602-4</a>.
+</div>
+<div id="ref-Michelot2024-jm" class="csl-entry" role="listitem">
+Michelot, Théo, Natasha J Klappstein, Jonathan R Potts, and John Fieberg. 2024. <span>“<span class="nocase">Understanding step selection analysis through numerical integration</span>.”</span> <em>Methods in Ecology and Evolution</em> 15 (January): 24–35. <a href="https://doi.org/10.1111/2041-210x.14248">https://doi.org/10.1111/2041-210x.14248</a>.
+</div>
+<div id="ref-Signer2023-wm" class="csl-entry" role="listitem">
+Signer, J, J Fieberg, B Reineking, U Schlägel, B Smith, N Balkenhol, and T Avgar. 2023. <span>“<span class="nocase">Simulating animal space use from fitted integrated Step‐Selection Functions (iSSF)</span>.”</span> <em>Methods in Ecology and Evolution</em>, December. <a href="https://doi.org/10.1111/2041-210x.14263">https://doi.org/10.1111/2041-210x.14263</a>.
+</div>
+<div id="ref-Signer2019-fi" class="csl-entry" role="listitem">
+Signer, Johannes, John Fieberg, and Tal Avgar. 2019. <span>“<span class="nocase">Animal movement tools (amt): R package for managing tracking data and conducting habitat selection analyses</span>.”</span> <em>Ecology and Evolution</em> 9 (January): 880–90. <a href="https://doi.org/10.1002/ece3.4823">https://doi.org/10.1002/ece3.4823</a>.
+</div>
 </div>
 
 
@@ -4536,15 +4585,43 @@ vertical-align: -.125em;
 <span id="cb1-32"><a href="#cb1-32"></a><span class="co">  </span></span>
 <span id="cb1-33"><a href="#cb1-33"></a><span class="co">---</span></span>
 <span id="cb1-34"><a href="#cb1-34"></a></span>
-<span id="cb1-35"><a href="#cb1-35"></a></span>
+<span id="cb1-35"><a href="#cb1-35"></a><span class="fu">## Packages</span></span>
 <span id="cb1-36"><a href="#cb1-36"></a></span>
-<span id="cb1-37"><a href="#cb1-37"></a></span>
+<span id="cb1-37"><a href="#cb1-37"></a><span class="ss">- </span><span class="in">`amt`</span> - main package for SSFs <span class="co">[</span><span class="ot">@Signer2019-fi</span><span class="co">]</span></span>
 <span id="cb1-38"><a href="#cb1-38"></a></span>
-<span id="cb1-39"><a href="#cb1-39"></a></span>
-<span id="cb1-40"><a href="#cb1-40"></a><span class="fu"># References</span></span>
-<span id="cb1-41"><a href="#cb1-41"></a></span>
-<span id="cb1-42"><a href="#cb1-42"></a>::: {#refs}</span>
-<span id="cb1-43"><a href="#cb1-43"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
+<span id="cb1-39"><a href="#cb1-39"></a><span class="fu">## Tutorials and resources</span></span>
+<span id="cb1-40"><a href="#cb1-40"></a></span>
+<span id="cb1-41"><a href="#cb1-41"></a>####<span class="in">`amt`</span> **preparing data**</span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="ss">- </span><span class="ot">&lt;https://cran.r-project.org/web/packages/amt/vignettes/p1_getting_started.html&gt;</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a></span>
+<span id="cb1-44"><a href="#cb1-44"></a><span class="fu">#### `amt` **fitting step selection functions**</span></span>
+<span id="cb1-45"><a href="#cb1-45"></a><span class="ss">- </span><span class="ot">&lt;https://cran.r-project.org/web/packages/amt/vignettes/p4_SSF.html&gt;</span></span>
+<span id="cb1-46"><a href="#cb1-46"></a></span>
+<span id="cb1-47"><a href="#cb1-47"></a><span class="fu">## Useful papers</span></span>
+<span id="cb1-48"><a href="#cb1-48"></a></span>
+<span id="cb1-49"><a href="#cb1-49"></a><span class="co">[</span><span class="ot">@Fortin2005-zw</span><span class="co">]</span> - the OG SSF paper</span>
+<span id="cb1-50"><a href="#cb1-50"></a>Fortin, D., Beyer, H. L., Boyce, M. S., Smith, D. W., Duchesne, T., &amp; Mao, J. S. (2005). **Wolves influence elk movements: Behavior shapes a trophic cascade in Yellowstone National Park**. Ecology, 86(5), 1320–1330. https://doi.org/10.1890/04-0953</span>
+<span id="cb1-51"><a href="#cb1-51"></a></span>
+<span id="cb1-52"><a href="#cb1-52"></a><span class="co">[</span><span class="ot">@Avgar2016-pb</span><span class="co">]</span> - for integrating movement and resource selection (with movement interactions)</span>
+<span id="cb1-53"><a href="#cb1-53"></a>Avgar, T., Potts, J. R., Lewis, M. A., &amp; Boyce, M. (2016). **Integrated step selection analysis: bridging the gap between resource selection and animal movement**. Methods in Ecology and Evolution, 7(5), 619–630. https://doi.org/10.1111/2041-210x.12528</span>
+<span id="cb1-54"><a href="#cb1-54"></a></span>
+<span id="cb1-55"><a href="#cb1-55"></a><span class="co">[</span><span class="ot">@Fieberg2021-wx</span><span class="co">]</span> - helpful guide for interpreting parameters in RSFs and SSFs</span>
+<span id="cb1-56"><a href="#cb1-56"></a>Fieberg, J., Signer, J., Smith, B., &amp; Avgar, T. (2021). **A “How to” guide for interpreting parameters in habitat-selection analyses**. The Journal of Animal Ecology, 90(5), 1027–1043. https://doi.org/10.1111/1365-2656.13441</span>
+<span id="cb1-57"><a href="#cb1-57"></a></span>
+<span id="cb1-58"><a href="#cb1-58"></a><span class="co">[</span><span class="ot">@Signer2023-wm</span><span class="co">]</span> - for generating simulations from SSFs</span>
+<span id="cb1-59"><a href="#cb1-59"></a>Signer, J., Fieberg, J., Reineking, B., Schlägel, U., Smith, B., Balkenhol, N., &amp; Avgar, T. (2023). **Simulating animal space use from fitted integrated Step‐Selection Functions (iSSF)**. Methods in Ecology and Evolution. https://doi.org/10.1111/2041-210x.14263</span>
+<span id="cb1-60"><a href="#cb1-60"></a></span>
+<span id="cb1-61"><a href="#cb1-61"></a><span class="co">[</span><span class="ot">@Hofmann2023-ii</span><span class="co">]</span> - full workflow from fitting SSFs, running simulations, and calculating connectivity</span>
+<span id="cb1-62"><a href="#cb1-62"></a>Hofmann, D. D., Cozzi, G., McNutt, J. W., Ozgul, A., &amp; Behr, D. M. (2023). **A three-step approach for assessing landscape connectivity via simulated dispersal: African wild dog case study**. Landscape Ecology, 38(4), 981–998. https://doi.org/10.1007/s10980-023-01602-4</span>
+<span id="cb1-63"><a href="#cb1-63"></a></span>
+<span id="cb1-64"><a href="#cb1-64"></a><span class="co">[</span><span class="ot">@Michelot2024-jm</span><span class="co">]</span> - a helpful conceptual overview of what SSFs are and how they&#39;re estimated</span>
+<span id="cb1-65"><a href="#cb1-65"></a>Michelot, T., Klappstein, N. J., Potts, J. R., &amp; Fieberg, J. (2024). **Understanding step selection analysis through numerical integration**. Methods in Ecology and Evolution, 15(1), 24–35. https://doi.org/10.1111/2041-210x.14248</span>
+<span id="cb1-66"><a href="#cb1-66"></a></span>
+<span id="cb1-67"><a href="#cb1-67"></a></span>
+<span id="cb1-68"><a href="#cb1-68"></a><span class="fu"># References</span></span>
+<span id="cb1-69"><a href="#cb1-69"></a></span>
+<span id="cb1-70"><a href="#cb1-70"></a>::: {#refs}</span>
+<span id="cb1-71"><a href="#cb1-71"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

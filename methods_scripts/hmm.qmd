@@ -32,8 +32,34 @@ abstract: |
   
 ---
 
+## Packages
 
+- `moveHMM` - <https://cran.r-project.org/web/packages/moveHMM/vignettes/moveHMM-guide.pdf> - For fitting hidden Markov models to animal movement data
+- `momentuHMM` - <https://cran.r-project.org/web/packages/momentuHMM/vignettes/momentuHMM.pdf> - Essentially an updated version of moveHMM with more flexibility
 
+## Tutorials and resources
+
+####`moveHMM` **package documentation and tutorials**
+- <https://cran.r-project.org/web/packages/moveHMM/vignettes/moveHMM-guide.pdf>
+- Michelot, T., Langrock, R., & Patterson, T. A. (2016). **moveHMM: an R package for the statistical modelling of animal movement data using hidden Markov models**. Methods in Ecology and Evolution, 7(11), 1308–1315. https://doi.org/10.1111/2041-210X.12578
+
+#### `momentuHMM` **package documentation and tutorials**
+- <https://cran.r-project.org/web/packages/momentuHMM/vignettes/momentuHMM.pdf>
+- McClintock, B. T., & Michelot, T. (2018). **momentuHMM: R package for generalized hidden Markov models of animal movement**. Methods in Ecology and Evolution, 9(6), 1518–1530. https://doi.org/10.1111/2041-210X.12995
+
+#### HMM tutorial
+- <https://mjones029.github.io/Tutorials/HMM_tutorial.html>
+
+#### Behavioral Analysis in R - *includes both HMMs and Behavioural Change Point Analysis (BCPA)*
+- <https://www.danaseidel.com/MovEco-R-Workshop/Materials/Day6/Behavioral_Analysis/>
+
+## Useful papers
+
+[@Langrock2012-yu]
+- Langrock, R., King, R., Matthiopoulos, J., Thomas, L., Fortin, D., & Morales, J. M. (2012). **Flexible and practical modeling of animal telemetry data: hidden Markov models and extensions**. Ecology, 93(11), 2336–2342. https://doi.org/10.1890/11-2241.1
+
+[@Pohle2017-rb]
+- Pohle, J., Langrock, R., van Beest, F. M., & Schmidt, N. M. (2017). **Selecting the Number of States in Hidden Markov Models: Pragmatic Solutions Illustrated Using Animal Movement**. Journal of Agricultural, Biological, and Environmental Statistics, 22(3), 270–293. https://doi.org/10.1007/s13253-017-0283-8
 
 
 # References

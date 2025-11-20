@@ -1,5 +1,5 @@
 ---
-title: "Step selection functions (SSF)"
+title: "Data Preparation"
 # author: 
 #   - name: "Scott Forrest"
 #     url: https://swforrest.github.io/
@@ -9,7 +9,7 @@ title: "Step selection functions (SSF)"
 date: today
 execute: 
   cache: false
-bibliography: ../paperpile_references.bib
+bibliography: paperpile_references.bib
 toc: true
 number-sections: false
 format: 
@@ -29,7 +29,7 @@ format:
 editor:
   source
 abstract: |
-  
+  Here we do some basic data processing and prepare the spatial layers. 
 ---
 
 # Load packages
@@ -59,7 +59,7 @@ dingo_data_sf <- st_as_sf(dingo_data, coords = c("x", "y"), crs = 4326)
 artificial_food <- st_read("spatial_layers/artificial_food/Art_Food_W84.shp") 
 artificial_water <- st_read("spatial_layers/artificial_water/ArtWater_W84v2.shp")
 roads <- st_read("spatial_layers/roads/RM_rds_trks_clip.shp") %>% 
-  st_transform(crs = st_crs(artificial_food_locations))
+  st_transform(crs = st_crs(artificial_food))
 
 ```
 
@@ -70,13 +70,17 @@ roads <- st_read("spatial_layers/roads/RM_rds_trks_clip.shp") %>%
 ggplot() +
   geom_sf(data = roads, color = "black") +
   geom_sf(data = artificial_water, color = "blue") +
-  geom_sf(data = artifical_food_locations, color = "red") +
+  geom_sf(data = artificial_food, color = "red") +
   geom_sf(data = dingo_data_sf, aes(color = as.factor(dog_id)), size = 0.25, alpha = 0.25) +
   theme_bw()
 
 ```
 
 ## Create an AOI for downloading DEM
+
+We can go to this website <https://elevation.fsdf.org.au/> to download a DEM for our area of interest (AOI). To do this, we first need to create a rectangle JSON that defines the AOI based on the GPS locations of the dingoes. We will add a buffer around the min and max coordinates to ensure we capture the full area.
+
+In this chunk we create a function that can take a GPS dataset, pull out the location columns to find a max and min in both lat and long (or easting and northing), add a buffer, and create a rectangle polygon shapefile and geojson file.
 
 ```{r}
 
@@ -206,10 +210,14 @@ roads_clipped <- st_intersection(roads, dingo_extent_sf)
 
 ggplot() +
   geom_sf(data = roads_clipped, color = "black") +
+  geom_sf(data = dingo_data_sf, aes(color = as.factor(dog_id)), size = 0.5, alpha = 0.25) +
   geom_sf(data = artificial_water_clipped, color = "blue") +
   geom_sf(data = artificial_food_clipped, color = "red") +
-  geom_sf(data = dingo_data_sf, aes(color = as.factor(dog_id)), size = 0.25, alpha = 0.25) +
-  theme_bw()
+  scale_colour_viridis_d("Dingo ID") +
+  theme_bw() +
+  theme(legend.position = "none")
+
+ggsave("figures/gps_locations_vector_objects.png", width = 150, height = 100, units = "mm", dpi = 600)
 
 ```
 
@@ -230,10 +238,10 @@ ggplot() +
 # terra::writeRaster(dist_artificial_water, "spatial_layers/artificial_water/dist_artificial_water.tif", overwrite = T)
 # 
 # # create distance to roads layer
-roads_raster <- terra::rasterize(vect(roads_clipped), dem, field = 1, background = NA)
-dist_roads <- terra::distance(roads_raster)
-plot(dist_roads, main = "Distance to Roads")
-terra::writeRaster(dist_roads, "spatial_layers/roads/dist_roads.tif", overwrite = T)
+# roads_raster <- terra::rasterize(vect(roads_clipped), dem, field = 1, background = NA)
+# dist_roads <- terra::distance(roads_raster)
+# plot(dist_roads, main = "Distance to Roads")
+# terra::writeRaster(dist_roads, "spatial_layers/roads/dist_roads.tif", overwrite = T)
 
 ```
 

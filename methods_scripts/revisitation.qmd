@@ -39,10 +39,11 @@ The `recurse` R package can be used to analyse revisitation patterns in animal m
 #### Recurse vignette (tutorial)
 <https://cran.r-project.org/web/packages/recurse/vignettes/recurse.html>
 
+#### Key reference
+Bracis, C., Bildstein, K. L., & Mueller, T. (2018). **Revisitation analysis uncovers spatio-temporal patterns in animal movement data**. Ecography, 41(11), 1801–1811. https://doi.org/10.1111/ecog.03618
+
+#### Application paper
+
+Campbell, H. A., Loewensteiner, D. A., Murphy, B. P., Pittard, S., & McMahon, C. R. (2020). **Seasonal movements and site utilisation by Asian water buffalo (Bubalus bubalis) in tropical savannas and floodplains of northern Australia**. Wildlife Research , 48(3), 230–239. https://doi.org/10.1071/WR20070
 
 
-
-# References
-
-::: {#refs}
-:::

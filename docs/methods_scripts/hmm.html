@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-20">
+<meta name="dcterms.date" content="2025-11-21">
 
 <title>Hidden Markov Modelling (HMM) – ESA2025 Movement Ecology Hackathon</title>
 <style>
@@ -59,6 +59,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
 clear: both;
+margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
 margin-left:2em;
@@ -4007,7 +4008,10 @@ vertical-align: -.125em;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link active" data-scroll-target="#packages">Packages</a></li>
+  <li><a href="#tutorials-and-resources" id="toc-tutorials-and-resources" class="nav-link" data-scroll-target="#tutorials-and-resources">Tutorials and resources</a></li>
+  <li><a href="#useful-papers" id="toc-useful-papers" class="nav-link" data-scroll-target="#useful-papers">Useful papers</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="hmm.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -4027,7 +4031,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 20, 2025</p>
+      <p class="date">November 21, 2025</p>
     </div>
   </div>
   
@@ -4039,10 +4043,50 @@ vertical-align: -.125em;
 </header>
 
 
+<section id="packages" class="level2">
+<h2 class="anchored" data-anchor-id="packages">Packages</h2>
+<ul>
+<li><code>moveHMM</code> - <a href="https://cran.r-project.org/web/packages/moveHMM/vignettes/moveHMM-guide.pdf" class="uri">https://cran.r-project.org/web/packages/moveHMM/vignettes/moveHMM-guide.pdf</a> - For fitting hidden Markov models to animal movement data</li>
+<li><code>momentuHMM</code> - <a href="https://cran.r-project.org/web/packages/momentuHMM/vignettes/momentuHMM.pdf" class="uri">https://cran.r-project.org/web/packages/momentuHMM/vignettes/momentuHMM.pdf</a> - Essentially an updated version of moveHMM with more flexibility</li>
+</ul>
+</section>
+<section id="tutorials-and-resources" class="level2">
+<h2 class="anchored" data-anchor-id="tutorials-and-resources">Tutorials and resources</h2>
+<p>####<code>moveHMM</code> <strong>package documentation and tutorials</strong> - <a href="https://cran.r-project.org/web/packages/moveHMM/vignettes/moveHMM-guide.pdf" class="uri">https://cran.r-project.org/web/packages/moveHMM/vignettes/moveHMM-guide.pdf</a> - Michelot, T., Langrock, R., &amp; Patterson, T. A. (2016). <strong>moveHMM: an R package for the statistical modelling of animal movement data using hidden Markov models</strong>. Methods in Ecology and Evolution, 7(11), 1308–1315. https://doi.org/10.1111/2041-210X.12578</p>
+<section id="momentuhmm-package-documentation-and-tutorials" class="level4">
+<h4 class="anchored" data-anchor-id="momentuhmm-package-documentation-and-tutorials"><code>momentuHMM</code> <strong>package documentation and tutorials</strong></h4>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/momentuHMM/vignettes/momentuHMM.pdf" class="uri">https://cran.r-project.org/web/packages/momentuHMM/vignettes/momentuHMM.pdf</a></li>
+<li>McClintock, B. T., &amp; Michelot, T. (2018). <strong>momentuHMM: R package for generalized hidden Markov models of animal movement</strong>. Methods in Ecology and Evolution, 9(6), 1518–1530. https://doi.org/10.1111/2041-210X.12995</li>
+</ul>
+</section>
+<section id="hmm-tutorial" class="level4">
+<h4 class="anchored" data-anchor-id="hmm-tutorial">HMM tutorial</h4>
+<ul>
+<li><a href="https://mjones029.github.io/Tutorials/HMM_tutorial.html" class="uri">https://mjones029.github.io/Tutorials/HMM_tutorial.html</a></li>
+</ul>
+</section>
+<section id="behavioral-analysis-in-r---includes-both-hmms-and-behavioural-change-point-analysis-bcpa" class="level4">
+<h4 class="anchored" data-anchor-id="behavioral-analysis-in-r---includes-both-hmms-and-behavioural-change-point-analysis-bcpa">Behavioral Analysis in R - <em>includes both HMMs and Behavioural Change Point Analysis (BCPA)</em></h4>
+<ul>
+<li><a href="https://www.danaseidel.com/MovEco-R-Workshop/Materials/Day6/Behavioral_Analysis/" class="uri">https://www.danaseidel.com/MovEco-R-Workshop/Materials/Day6/Behavioral_Analysis/</a></li>
+</ul>
+</section>
+</section>
+<section id="useful-papers" class="level2">
+<h2 class="anchored" data-anchor-id="useful-papers">Useful papers</h2>
+<p><span class="citation" data-cites="Langrock2012-yu">(<a href="#ref-Langrock2012-yu" role="doc-biblioref">Langrock et al. 2012</a>)</span> - Langrock, R., King, R., Matthiopoulos, J., Thomas, L., Fortin, D., &amp; Morales, J. M. (2012). <strong>Flexible and practical modeling of animal telemetry data: hidden Markov models and extensions</strong>. Ecology, 93(11), 2336–2342. https://doi.org/10.1890/11-2241.1</p>
+<p><span class="citation" data-cites="Pohle2017-rb">(<a href="#ref-Pohle2017-rb" role="doc-biblioref">Pohle et al. 2017</a>)</span> - Pohle, J., Langrock, R., van Beest, F. M., &amp; Schmidt, N. M. (2017). <strong>Selecting the Number of States in Hidden Markov Models: Pragmatic Solutions Illustrated Using Animal Movement</strong>. Journal of Agricultural, Biological, and Environmental Statistics, 22(3), 270–293. https://doi.org/10.1007/s13253-017-0283-8</p>
+</section>
 <section id="references" class="level1">
 <h1>References</h1>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Langrock2012-yu" class="csl-entry" role="listitem">
+Langrock, Roland, Ruth King, Jason Matthiopoulos, Len Thomas, Daniel Fortin, and Juan M Morales. 2012. <span>“<span class="nocase">Flexible and practical modeling of animal telemetry data: hidden Markov models and extensions</span>.”</span> <em>Ecology</em> 93 (November): 2336–42. <a href="https://doi.org/10.1890/11-2241.1">https://doi.org/10.1890/11-2241.1</a>.
+</div>
+<div id="ref-Pohle2017-rb" class="csl-entry" role="listitem">
+Pohle, Jennifer, Roland Langrock, Floris M van Beest, and Niels Martin Schmidt. 2017. <span>“<span class="nocase">Selecting the Number of States in Hidden Markov Models: Pragmatic Solutions Illustrated Using Animal Movement</span>.”</span> <em>Journal of Agricultural, Biological, and Environmental Statistics</em> 22 (September): 270–93. <a href="https://doi.org/10.1007/s13253-017-0283-8">https://doi.org/10.1007/s13253-017-0283-8</a>.
+</div>
 </div>
 
 
@@ -4536,14 +4580,40 @@ vertical-align: -.125em;
 <span id="cb1-32"><a href="#cb1-32"></a><span class="co">  </span></span>
 <span id="cb1-33"><a href="#cb1-33"></a><span class="co">---</span></span>
 <span id="cb1-34"><a href="#cb1-34"></a></span>
-<span id="cb1-35"><a href="#cb1-35"></a></span>
+<span id="cb1-35"><a href="#cb1-35"></a><span class="fu">## Packages</span></span>
 <span id="cb1-36"><a href="#cb1-36"></a></span>
-<span id="cb1-37"><a href="#cb1-37"></a></span>
-<span id="cb1-38"><a href="#cb1-38"></a></span>
-<span id="cb1-39"><a href="#cb1-39"></a><span class="fu"># References</span></span>
-<span id="cb1-40"><a href="#cb1-40"></a></span>
-<span id="cb1-41"><a href="#cb1-41"></a>::: {#refs}</span>
-<span id="cb1-42"><a href="#cb1-42"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
+<span id="cb1-37"><a href="#cb1-37"></a><span class="ss">- </span><span class="in">`moveHMM`</span> - <span class="ot">&lt;https://cran.r-project.org/web/packages/moveHMM/vignettes/moveHMM-guide.pdf&gt;</span> - For fitting hidden Markov models to animal movement data</span>
+<span id="cb1-38"><a href="#cb1-38"></a><span class="ss">- </span><span class="in">`momentuHMM`</span> - <span class="ot">&lt;https://cran.r-project.org/web/packages/momentuHMM/vignettes/momentuHMM.pdf&gt;</span> - Essentially an updated version of moveHMM with more flexibility</span>
+<span id="cb1-39"><a href="#cb1-39"></a></span>
+<span id="cb1-40"><a href="#cb1-40"></a><span class="fu">## Tutorials and resources</span></span>
+<span id="cb1-41"><a href="#cb1-41"></a></span>
+<span id="cb1-42"><a href="#cb1-42"></a>####<span class="in">`moveHMM`</span> **package documentation and tutorials**</span>
+<span id="cb1-43"><a href="#cb1-43"></a><span class="ss">- </span><span class="ot">&lt;https://cran.r-project.org/web/packages/moveHMM/vignettes/moveHMM-guide.pdf&gt;</span></span>
+<span id="cb1-44"><a href="#cb1-44"></a><span class="ss">- </span>Michelot, T., Langrock, R., &amp; Patterson, T. A. (2016). **moveHMM: an R package for the statistical modelling of animal movement data using hidden Markov models**. Methods in Ecology and Evolution, 7(11), 1308–1315. https://doi.org/10.1111/2041-210X.12578</span>
+<span id="cb1-45"><a href="#cb1-45"></a></span>
+<span id="cb1-46"><a href="#cb1-46"></a><span class="fu">#### `momentuHMM` **package documentation and tutorials**</span></span>
+<span id="cb1-47"><a href="#cb1-47"></a><span class="ss">- </span><span class="ot">&lt;https://cran.r-project.org/web/packages/momentuHMM/vignettes/momentuHMM.pdf&gt;</span></span>
+<span id="cb1-48"><a href="#cb1-48"></a><span class="ss">- </span>McClintock, B. T., &amp; Michelot, T. (2018). **momentuHMM: R package for generalized hidden Markov models of animal movement**. Methods in Ecology and Evolution, 9(6), 1518–1530. https://doi.org/10.1111/2041-210X.12995</span>
+<span id="cb1-49"><a href="#cb1-49"></a></span>
+<span id="cb1-50"><a href="#cb1-50"></a><span class="fu">#### HMM tutorial</span></span>
+<span id="cb1-51"><a href="#cb1-51"></a><span class="ss">- </span><span class="ot">&lt;https://mjones029.github.io/Tutorials/HMM_tutorial.html&gt;</span></span>
+<span id="cb1-52"><a href="#cb1-52"></a></span>
+<span id="cb1-53"><a href="#cb1-53"></a><span class="fu">#### Behavioral Analysis in R - *includes both HMMs and Behavioural Change Point Analysis (BCPA)*</span></span>
+<span id="cb1-54"><a href="#cb1-54"></a><span class="ss">- </span><span class="ot">&lt;https://www.danaseidel.com/MovEco-R-Workshop/Materials/Day6/Behavioral_Analysis/&gt;</span></span>
+<span id="cb1-55"><a href="#cb1-55"></a></span>
+<span id="cb1-56"><a href="#cb1-56"></a><span class="fu">## Useful papers</span></span>
+<span id="cb1-57"><a href="#cb1-57"></a></span>
+<span id="cb1-58"><a href="#cb1-58"></a><span class="co">[</span><span class="ot">@Langrock2012-yu</span><span class="co">]</span></span>
+<span id="cb1-59"><a href="#cb1-59"></a><span class="ss">- </span>Langrock, R., King, R., Matthiopoulos, J., Thomas, L., Fortin, D., &amp; Morales, J. M. (2012). **Flexible and practical modeling of animal telemetry data: hidden Markov models and extensions**. Ecology, 93(11), 2336–2342. https://doi.org/10.1890/11-2241.1</span>
+<span id="cb1-60"><a href="#cb1-60"></a></span>
+<span id="cb1-61"><a href="#cb1-61"></a><span class="co">[</span><span class="ot">@Pohle2017-rb</span><span class="co">]</span></span>
+<span id="cb1-62"><a href="#cb1-62"></a><span class="ss">- </span>Pohle, J., Langrock, R., van Beest, F. M., &amp; Schmidt, N. M. (2017). **Selecting the Number of States in Hidden Markov Models: Pragmatic Solutions Illustrated Using Animal Movement**. Journal of Agricultural, Biological, and Environmental Statistics, 22(3), 270–293. https://doi.org/10.1007/s13253-017-0283-8</span>
+<span id="cb1-63"><a href="#cb1-63"></a></span>
+<span id="cb1-64"><a href="#cb1-64"></a></span>
+<span id="cb1-65"><a href="#cb1-65"></a><span class="fu"># References</span></span>
+<span id="cb1-66"><a href="#cb1-66"></a></span>
+<span id="cb1-67"><a href="#cb1-67"></a>::: {#refs}</span>
+<span id="cb1-68"><a href="#cb1-68"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

@@ -36,7 +36,7 @@ Here we have resources and links for common movement ecology methods that you mi
 
 **<<< Click the tabs to the left to get information and resources for specific methods.**
 
-Below are some general resources, such as books and review papers, that give an overview of movement ecology methods and concepts.
+Below are some general resources, such as books and workshops with online resources, to give a general overview of movement ecology methods and concepts.
 
 ## Books
 
@@ -45,12 +45,16 @@ Below are some general resources, such as books and review papers, that give an 
 
 This book is still being developed, but it gives an excellent overview of animal movement and statistical concepts. It is freely accessible online at <https://eligurarie.github.io/MovementEcologyBook/>.
 
+## Online workshops
+
+### HKU Movement Ecology in R Workshop
+*Contributors:* Dana Paige Seidel, Eric Dougherty, Wayne M. Getz
+
+This is a fantastic online resource that covers a range of approaches, also providing code for a variety of movement ecology methods. It was developed in 2018 so there have been methodological developments since then, but it still looks to be robust. Available at <https://www.danaseidel.com/MovEco-R-Workshop/>
+
 ## Review papers
 
+Florko, K. R. N., Togunov, R. R., Gryba, R., Sidrow, E., Ferguson, S. H., Yurkowski, D. J., & Auger-Méthé, M. (2025). **An introduction to statistical models used to characterize species-habitat associations with animal movement data**. Movement Ecology, 13(1), 27. https://doi.org/10.1186/s40462-025-00549-2
 
+Joo, R., Boone, M. E., Clay, T. A., Patrick, S. C., Clusella-Trullas, S., & Basille, M. (2020). **Navigating through the r packages for movement**. The Journal of Animal Ecology, 89(1), 248–267. https://doi.org/10.1111/1365-2656.13116
 
-
-# References
-
-::: {#refs}
-:::

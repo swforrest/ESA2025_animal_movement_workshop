@@ -32,9 +32,37 @@ abstract: |
   
 ---
 
+## Packages
 
+- `amt` - main package for SSFs [@Signer2019-fi]
 
+## Tutorials and resources
 
+####`amt` **preparing data**
+- <https://cran.r-project.org/web/packages/amt/vignettes/p1_getting_started.html>
+
+#### `amt` **fitting step selection functions**
+- <https://cran.r-project.org/web/packages/amt/vignettes/p4_SSF.html>
+
+## Useful papers
+
+[@Fortin2005-zw] - the OG SSF paper
+Fortin, D., Beyer, H. L., Boyce, M. S., Smith, D. W., Duchesne, T., & Mao, J. S. (2005). **Wolves influence elk movements: Behavior shapes a trophic cascade in Yellowstone National Park**. Ecology, 86(5), 1320–1330. https://doi.org/10.1890/04-0953
+
+[@Avgar2016-pb] - for integrating movement and resource selection (with movement interactions)
+Avgar, T., Potts, J. R., Lewis, M. A., & Boyce, M. (2016). **Integrated step selection analysis: bridging the gap between resource selection and animal movement**. Methods in Ecology and Evolution, 7(5), 619–630. https://doi.org/10.1111/2041-210x.12528
+
+[@Fieberg2021-wx] - helpful guide for interpreting parameters in RSFs and SSFs
+Fieberg, J., Signer, J., Smith, B., & Avgar, T. (2021). **A “How to” guide for interpreting parameters in habitat-selection analyses**. The Journal of Animal Ecology, 90(5), 1027–1043. https://doi.org/10.1111/1365-2656.13441
+
+[@Signer2023-wm] - for generating simulations from SSFs
+Signer, J., Fieberg, J., Reineking, B., Schlägel, U., Smith, B., Balkenhol, N., & Avgar, T. (2023). **Simulating animal space use from fitted integrated Step‐Selection Functions (iSSF)**. Methods in Ecology and Evolution. https://doi.org/10.1111/2041-210x.14263
+
+[@Hofmann2023-ii] - full workflow from fitting SSFs, running simulations, and calculating connectivity
+Hofmann, D. D., Cozzi, G., McNutt, J. W., Ozgul, A., & Behr, D. M. (2023). **A three-step approach for assessing landscape connectivity via simulated dispersal: African wild dog case study**. Landscape Ecology, 38(4), 981–998. https://doi.org/10.1007/s10980-023-01602-4
+
+[@Michelot2024-jm] - a helpful conceptual overview of what SSFs are and how they're estimated
+Michelot, T., Klappstein, N. J., Potts, J. R., & Fieberg, J. (2024). **Understanding step selection analysis through numerical integration**. Methods in Ecology and Evolution, 15(1), 24–35. https://doi.org/10.1111/2041-210x.14248
 
 
 # References

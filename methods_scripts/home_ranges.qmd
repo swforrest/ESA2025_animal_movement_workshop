@@ -32,9 +32,33 @@ abstract: |
   
 ---
 
-Home range analyses
+## Packages
+- `adehabitatHR` - early package for home range estimation (KDE, MCP) [@Calenge2007-qr]
+- `ctmm` - mostly for AKDE home range estimation [@Calabrese2016-ns]
+- `amt` - this package was originally for SSFs but has recent functionality for home ranges [@Signer2021-es]
 
+## Home range approaches
 
+#### Kernel density estimation (KDE)
+
+Worton, B. J. (1989). **Kernel methods for estimating the utilization distribution in home-range studies**. Ecology, 70(1), 164–168. https://doi.org/10.2307/1938423 
+
+#### Autocorrelated kernel density estimation (AKDE)
+
+Fleming, C. H., Fagan, W. F., Mueller, T., Olson, K. A., Leimgruber, P., & Calabrese, J. M. (2015). **Rigorous home range estimation with movement data: a new autocorrelated kernel density estimator**. Ecology, 96(5), 1182–1188. https://doi.org/10.1890/14-2010.1
+
+Silva, I., Fleming, C. H., Noonan, M. J., Alston, J., Folta, C., Fagan, W. F., & Calabrese, J. M. (2022). **Autocorrelation‐informed home range estimation: A review and practical guide**. Methods in Ecology and Evolution / British Ecological Society, 13(3), 534–544. https://doi.org/10.1111/2041-210x.13786
+
+#### Brownian bridge approaches (BBMM and dBBMM)
+
+Horne, J. S., Garton, E. O., Krone, S. M., & Lewis, J. S. (2007). **Analyzing animal movements using Brownian bridges**. Ecology, 88(9), 2354–2363. https://doi.org/10.1890/06-0957.1
+
+Kranstauber, B., Kays, R., Lapoint, S. D., Wikelski, M., & Safi, K. (2012). **A dynamic Brownian bridge movement model to estimate utilization distributions for heterogeneous animal movement**. The Journal of Animal Ecology, 81(4), 738–746. https://doi.org/10.1111/j.1365-2656.2012.01955.x 
+
+## Conceptual considerations
+
+**Range vs occurrence distributions**
+Alston, J. M., Fleming, C. H., Noonan, M. J., Tucker, M. A., Silva, I., Folta, C., Akre, T. S. B., Ali, A. H., Belant, J. L., Beyer, D., Blaum, N., Böhning-Gaese, K., de Paula, R. C., Dekker, J., Drescher-Lehman, J., Farwig, N., Fichtel, C., Fischer, C., Ford, A. T., … Calabrese, J. M. (2022). **Clarifying space use concepts in ecology: range vs. occurrence distributions**. In bioRxiv (p. 2022.09.29.509951). https://doi.org/10.1101/2022.09.29.509951 
 
 
 # References

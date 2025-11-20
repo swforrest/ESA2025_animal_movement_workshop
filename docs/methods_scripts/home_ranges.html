@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-20">
+<meta name="dcterms.date" content="2025-11-21">
 
 <title>Home Ranges – ESA2025 Movement Ecology Hackathon</title>
 <style>
@@ -59,6 +59,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
 clear: both;
+margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
 margin-left:2em;
@@ -4007,7 +4008,10 @@ vertical-align: -.125em;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link active" data-scroll-target="#packages">Packages</a></li>
+  <li><a href="#home-range-approaches" id="toc-home-range-approaches" class="nav-link" data-scroll-target="#home-range-approaches">Home range approaches</a></li>
+  <li><a href="#conceptual-considerations" id="toc-conceptual-considerations" class="nav-link" data-scroll-target="#conceptual-considerations">Conceptual considerations</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="home_ranges.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -4027,7 +4031,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 20, 2025</p>
+      <p class="date">November 21, 2025</p>
     </div>
   </div>
   
@@ -4039,11 +4043,47 @@ vertical-align: -.125em;
 </header>
 
 
-<p>Home range analyses</p>
+<section id="packages" class="level2">
+<h2 class="anchored" data-anchor-id="packages">Packages</h2>
+<ul>
+<li><code>adehabitatHR</code> - early package for home range estimation (KDE, MCP) <span class="citation" data-cites="Calenge2007-qr">(<a href="#ref-Calenge2007-qr" role="doc-biblioref">Calenge 2007</a>)</span></li>
+<li><code>ctmm</code> - mostly for AKDE home range estimation <span class="citation" data-cites="Calabrese2016-ns">(<a href="#ref-Calabrese2016-ns" role="doc-biblioref">Calabrese, Fleming, and Gurarie 2016</a>)</span></li>
+<li><code>amt</code> - this package was originally for SSFs but has recent functionality for home ranges <span class="citation" data-cites="Signer2021-es">(<a href="#ref-Signer2021-es" role="doc-biblioref">Signer and Fieberg 2021</a>)</span></li>
+</ul>
+</section>
+<section id="home-range-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="home-range-approaches">Home range approaches</h2>
+<section id="kernel-density-estimation-kde" class="level4">
+<h4 class="anchored" data-anchor-id="kernel-density-estimation-kde">Kernel density estimation (KDE)</h4>
+<p>Worton, B. J. (1989). <strong>Kernel methods for estimating the utilization distribution in home-range studies</strong>. Ecology, 70(1), 164–168. https://doi.org/10.2307/1938423</p>
+</section>
+<section id="autocorrelated-kernel-density-estimation-akde" class="level4">
+<h4 class="anchored" data-anchor-id="autocorrelated-kernel-density-estimation-akde">Autocorrelated kernel density estimation (AKDE)</h4>
+<p>Fleming, C. H., Fagan, W. F., Mueller, T., Olson, K. A., Leimgruber, P., &amp; Calabrese, J. M. (2015). <strong>Rigorous home range estimation with movement data: a new autocorrelated kernel density estimator</strong>. Ecology, 96(5), 1182–1188. https://doi.org/10.1890/14-2010.1</p>
+<p>Silva, I., Fleming, C. H., Noonan, M. J., Alston, J., Folta, C., Fagan, W. F., &amp; Calabrese, J. M. (2022). <strong>Autocorrelation‐informed home range estimation: A review and practical guide</strong>. Methods in Ecology and Evolution / British Ecological Society, 13(3), 534–544. https://doi.org/10.1111/2041-210x.13786</p>
+</section>
+<section id="brownian-bridge-approaches-bbmm-and-dbbmm" class="level4">
+<h4 class="anchored" data-anchor-id="brownian-bridge-approaches-bbmm-and-dbbmm">Brownian bridge approaches (BBMM and dBBMM)</h4>
+<p>Horne, J. S., Garton, E. O., Krone, S. M., &amp; Lewis, J. S. (2007). <strong>Analyzing animal movements using Brownian bridges</strong>. Ecology, 88(9), 2354–2363. https://doi.org/10.1890/06-0957.1</p>
+<p>Kranstauber, B., Kays, R., Lapoint, S. D., Wikelski, M., &amp; Safi, K. (2012). <strong>A dynamic Brownian bridge movement model to estimate utilization distributions for heterogeneous animal movement</strong>. The Journal of Animal Ecology, 81(4), 738–746. https://doi.org/10.1111/j.1365-2656.2012.01955.x</p>
+</section>
+</section>
+<section id="conceptual-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="conceptual-considerations">Conceptual considerations</h2>
+<p><strong>Range vs occurrence distributions</strong> Alston, J. M., Fleming, C. H., Noonan, M. J., Tucker, M. A., Silva, I., Folta, C., Akre, T. S. B., Ali, A. H., Belant, J. L., Beyer, D., Blaum, N., Böhning-Gaese, K., de Paula, R. C., Dekker, J., Drescher-Lehman, J., Farwig, N., Fichtel, C., Fischer, C., Ford, A. T., … Calabrese, J. M. (2022). <strong>Clarifying space use concepts in ecology: range vs. occurrence distributions</strong>. In bioRxiv (p. 2022.09.29.509951). https://doi.org/10.1101/2022.09.29.509951</p>
+</section>
 <section id="references" class="level1">
 <h1>References</h1>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Calabrese2016-ns" class="csl-entry" role="listitem">
+Calabrese, Justin M, Chris H Fleming, and Eliezer Gurarie. 2016. <span>“<span class="nocase">Ctmm: An r package for analyzing animal relocation data as a continuous‐time stochastic process</span>.”</span> <em>Methods in Ecology and Evolution / British Ecological Society</em> 7 (September): 1124–32. <a href="https://doi.org/10.1111/2041-210x.12559">https://doi.org/10.1111/2041-210x.12559</a>.
+</div>
+<div id="ref-Calenge2007-qr" class="csl-entry" role="listitem">
+Calenge, Clément. 2007. <span>“<span class="nocase">Exploring Habitat Selection by Wildlife with adehabitat</span>.”</span> <em>Journal of Statistical Software</em> 22 (September): 1–19. <a href="https://doi.org/10.18637/jss.v022.i06">https://doi.org/10.18637/jss.v022.i06</a>.
+</div>
+<div id="ref-Signer2021-es" class="csl-entry" role="listitem">
+Signer, Johannes, and John R Fieberg. 2021. <span>“<span class="nocase">A fresh look at an old concept: home-range estimation in a tidy world</span>.”</span> <em>PeerJ</em> 9 (March): e11031. <a href="https://doi.org/10.7717/peerj.11031">https://doi.org/10.7717/peerj.11031</a>.
+</div>
 </div>
 
 
@@ -4537,15 +4577,39 @@ vertical-align: -.125em;
 <span id="cb1-32"><a href="#cb1-32"></a><span class="co">  </span></span>
 <span id="cb1-33"><a href="#cb1-33"></a><span class="co">---</span></span>
 <span id="cb1-34"><a href="#cb1-34"></a></span>
-<span id="cb1-35"><a href="#cb1-35"></a>Home range analyses</span>
-<span id="cb1-36"><a href="#cb1-36"></a></span>
-<span id="cb1-37"><a href="#cb1-37"></a></span>
-<span id="cb1-38"><a href="#cb1-38"></a></span>
+<span id="cb1-35"><a href="#cb1-35"></a><span class="fu">## Packages</span></span>
+<span id="cb1-36"><a href="#cb1-36"></a><span class="ss">- </span><span class="in">`adehabitatHR`</span> - early package for home range estimation (KDE, MCP) <span class="co">[</span><span class="ot">@Calenge2007-qr</span><span class="co">]</span></span>
+<span id="cb1-37"><a href="#cb1-37"></a><span class="ss">- </span><span class="in">`ctmm`</span> - mostly for AKDE home range estimation <span class="co">[</span><span class="ot">@Calabrese2016-ns</span><span class="co">]</span></span>
+<span id="cb1-38"><a href="#cb1-38"></a><span class="ss">- </span><span class="in">`amt`</span> - this package was originally for SSFs but has recent functionality for home ranges <span class="co">[</span><span class="ot">@Signer2021-es</span><span class="co">]</span></span>
 <span id="cb1-39"><a href="#cb1-39"></a></span>
-<span id="cb1-40"><a href="#cb1-40"></a><span class="fu"># References</span></span>
+<span id="cb1-40"><a href="#cb1-40"></a><span class="fu">## Home range approaches</span></span>
 <span id="cb1-41"><a href="#cb1-41"></a></span>
-<span id="cb1-42"><a href="#cb1-42"></a>::: {#refs}</span>
-<span id="cb1-43"><a href="#cb1-43"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="fu">#### Kernel density estimation (KDE)</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a></span>
+<span id="cb1-44"><a href="#cb1-44"></a>Worton, B. J. (1989). **Kernel methods for estimating the utilization distribution in home-range studies**. Ecology, 70(1), 164–168. https://doi.org/10.2307/1938423 </span>
+<span id="cb1-45"><a href="#cb1-45"></a></span>
+<span id="cb1-46"><a href="#cb1-46"></a><span class="fu">#### Autocorrelated kernel density estimation (AKDE)</span></span>
+<span id="cb1-47"><a href="#cb1-47"></a></span>
+<span id="cb1-48"><a href="#cb1-48"></a>Fleming, C. H., Fagan, W. F., Mueller, T., Olson, K. A., Leimgruber, P., &amp; Calabrese, J. M. (2015). **Rigorous home range estimation with movement data: a new autocorrelated kernel density estimator**. Ecology, 96(5), 1182–1188. https://doi.org/10.1890/14-2010.1</span>
+<span id="cb1-49"><a href="#cb1-49"></a></span>
+<span id="cb1-50"><a href="#cb1-50"></a>Silva, I., Fleming, C. H., Noonan, M. J., Alston, J., Folta, C., Fagan, W. F., &amp; Calabrese, J. M. (2022). **Autocorrelation‐informed home range estimation: A review and practical guide**. Methods in Ecology and Evolution / British Ecological Society, 13(3), 534–544. https://doi.org/10.1111/2041-210x.13786</span>
+<span id="cb1-51"><a href="#cb1-51"></a></span>
+<span id="cb1-52"><a href="#cb1-52"></a><span class="fu">#### Brownian bridge approaches (BBMM and dBBMM)</span></span>
+<span id="cb1-53"><a href="#cb1-53"></a></span>
+<span id="cb1-54"><a href="#cb1-54"></a>Horne, J. S., Garton, E. O., Krone, S. M., &amp; Lewis, J. S. (2007). **Analyzing animal movements using Brownian bridges**. Ecology, 88(9), 2354–2363. https://doi.org/10.1890/06-0957.1</span>
+<span id="cb1-55"><a href="#cb1-55"></a></span>
+<span id="cb1-56"><a href="#cb1-56"></a>Kranstauber, B., Kays, R., Lapoint, S. D., Wikelski, M., &amp; Safi, K. (2012). **A dynamic Brownian bridge movement model to estimate utilization distributions for heterogeneous animal movement**. The Journal of Animal Ecology, 81(4), 738–746. https://doi.org/10.1111/j.1365-2656.2012.01955.x </span>
+<span id="cb1-57"><a href="#cb1-57"></a></span>
+<span id="cb1-58"><a href="#cb1-58"></a><span class="fu">## Conceptual considerations</span></span>
+<span id="cb1-59"><a href="#cb1-59"></a></span>
+<span id="cb1-60"><a href="#cb1-60"></a>**Range vs occurrence distributions**</span>
+<span id="cb1-61"><a href="#cb1-61"></a>Alston, J. M., Fleming, C. H., Noonan, M. J., Tucker, M. A., Silva, I., Folta, C., Akre, T. S. B., Ali, A. H., Belant, J. L., Beyer, D., Blaum, N., Böhning-Gaese, K., de Paula, R. C., Dekker, J., Drescher-Lehman, J., Farwig, N., Fichtel, C., Fischer, C., Ford, A. T., … Calabrese, J. M. (2022). **Clarifying space use concepts in ecology: range vs. occurrence distributions**. In bioRxiv (p. 2022.09.29.509951). https://doi.org/10.1101/2022.09.29.509951 </span>
+<span id="cb1-62"><a href="#cb1-62"></a></span>
+<span id="cb1-63"><a href="#cb1-63"></a></span>
+<span id="cb1-64"><a href="#cb1-64"></a><span class="fu"># References</span></span>
+<span id="cb1-65"><a href="#cb1-65"></a></span>
+<span id="cb1-66"><a href="#cb1-66"></a>::: {#refs}</span>
+<span id="cb1-67"><a href="#cb1-67"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
