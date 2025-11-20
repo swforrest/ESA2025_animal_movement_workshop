@@ -69,7 +69,7 @@
     "href": "getting_started.html",
     "title": "Getting Started",
     "section": "",
-    "text": "It will be helpful to access the full repository for this workshop, for the data, covariates and any template scripts to get started.\nThere are two ways to do this, by ‘forking’ the repository on GitHub, or by downloading the repository as a ZIP file. If you want to have a copy of the repository on your GitHub account, which you can push any changes to for version control, then choose the first option."
+    "text": "It will be helpful to access the full repository for this workshop, for the data, covariates and any template scripts to get started. The resources (and this website) are hosted on GitHub at: https://github.com/swforrest/ESA2025_movement_ecology_hackathon.\nHere are two preferred ways to get all of the resources (without having to download things individually), 1) by ‘forking’ the repository on GitHub, or 2) by downloading the repository as a ZIP file. If you want to have a copy of the repository on your GitHub account, which you can push any changes to for version control, then choose the first option."
   },
   {
     "objectID": "getting_started.html#fork-the-repository-on-github",
@@ -90,49 +90,42 @@
     "href": "research_questions.html",
     "title": "Research Questions",
     "section": "",
-    "text": "Below are some examples of research questions that could be explored with the dingo GPS data set. These are just suggestions to get you thinking - feel free to come up with your own questions too!\nThe focus of papers that have previously analysed this data focused on broad-scale behaviours like home ranges (Newsome, Ballard, Dickman, Fleming, and Howden 2013) and landscape-scale resource selection (Newsome, Ballard, Dickman, Fleming, and Ven 2013), but there are a number of other research questions that could be addressed, particularly at fine-scales. Some suggestions are:"
+    "text": "Below are some examples of research questions that could be explored with the dingo GPS data set. These are just suggestions to get you thinking - feel free to come up with your own questions too!\nThe focus of papers that have previously analysed this data focused on broad-scale behaviours like home ranges (Newsome, Ballard, Dickman, Fleming, and Howden 2013) and landscape-scale resource selection (Newsome, Ballard, Dickman, Fleming, and Ven 2013), but there are a number of other research questions that could be addressed, particularly at fine-scales.\nSome suggestions are:"
   },
   {
     "objectID": "research_questions.html#how-do-dingo-behaviours-differ-between-individuals-at-mine-sites-and-those-elsewhere",
     "href": "research_questions.html#how-do-dingo-behaviours-differ-between-individuals-at-mine-sites-and-those-elsewhere",
     "title": "Research Questions",
     "section": "How do dingo behaviours differ between individuals at mine sites and those elsewhere?",
-    "text": "How do dingo behaviours differ between individuals at mine sites and those elsewhere?\n\nDo non-mine dingoes spend more time in higher energy foraging states?\nWhen do they switch behaviours, how does that differ between mine/non-mine IDs\n\n\nMethods\n\nHidden Markov models (Langrock et al. 2012; McClintock et al. 2012)\nBehavioural change point analysis (BCPA) (Gurarie, Andrews, and Laidre 2009; Gurarie 2013; Gurarie et al. 2016)\nMachine learning for behavioural classification"
+    "text": "How do dingo behaviours differ between individuals at mine sites and those elsewhere?\n\nDo non-mine dingoes spend more time in higher energy foraging states?\nWhen do they switch behaviours, how does that differ between mine/non-mine IDs\n\n\nMethods\n\nHidden Markov models (Langrock et al. 2012; McClintock et al. 2012)\nBehavioural change point analysis (BCPA) (Gurarie, Andrews, and Laidre 2009; Gurarie 2013; Gurarie et al. 2016)"
   },
   {
     "objectID": "research_questions.html#what-is-the-influence-of-the-surrounding-environment-on-the-dingoes-movement",
     "href": "research_questions.html#what-is-the-influence-of-the-surrounding-environment-on-the-dingoes-movement",
     "title": "Research Questions",
     "section": "What is the influence of the surrounding environment on the dingoes’ movement?",
-    "text": "What is the influence of the surrounding environment on the dingoes’ movement?\n\nDoes this differ between mine and non-mine sites?"
-  },
-  {
-    "objectID": "research_questions.html#methods-1",
-    "href": "research_questions.html#methods-1",
-    "title": "Research Questions",
-    "section": "Methods",
-    "text": "Methods\n\nStep selection functions (SSFs) (Fortin et al. 2005; Thurfjell, Ciuti, and Boyce 2014; Johannes Signer, Fieberg, and Avgar 2019)"
+    "text": "What is the influence of the surrounding environment on the dingoes’ movement?\n\nDo they select for linear features such as roads?\nDoes their movement and habitat selection differ between mine and non-mine sites?\n\n\nMethods\n\nStep selection functions (SSFs) (Fortin et al. 2005; Thurfjell, Ciuti, and Boyce 2014; Johannes Signer, Fieberg, and Avgar 2019)"
   },
   {
     "objectID": "research_questions.html#how-do-dingoes-behaviours-change-across-the-day",
     "href": "research_questions.html#how-do-dingoes-behaviours-change-across-the-day",
     "title": "Research Questions",
     "section": "How do dingoes’ behaviours change across the day?",
-    "text": "How do dingoes’ behaviours change across the day?\n\nAssessing temporal dynamics in movement and habitat selection\nLooking at behavioural state changes across the day\n\n\nMethods\n\nDescriptive (summarising data across the day)\nTemporally dynamic SSFs (Forrest et al. 2024; Klappstein et al. 2024)\nHMMs with temporal covariate on state transition matrix"
+    "text": "How do dingoes’ behaviours change across the day?\n\nAre there temporal dynamics in their movement and habitat selection?\nDoes the probability of switching behaviours vary throughout the day?\n\n\nMethods\n\nDescriptive (summarising data across the day)\nTemporally dynamic SSFs (Forrest et al. 2024; Klappstein et al. 2024)\nHMMs with a temporal covariate on state transition matrix"
   },
   {
     "objectID": "research_questions.html#how-do-dingoes-connect-through-the-landscape",
     "href": "research_questions.html#how-do-dingoes-connect-through-the-landscape",
     "title": "Research Questions",
     "section": "How do dingoes connect through the landscape?",
-    "text": "How do dingoes connect through the landscape?\n\nGenerating connectivity pathways and movement corridors\n\n\nMethods\n\nStep selection functions with simulations (J. Signer et al. 2023; Hofmann et al. 2023; Forrest et al. 2024; Cowan et al. 2025)\nConnectivity analyses\n\nBetweenness/connectivity (Hofmann et al. 2023; Cowan et al. 2025)\nLeast-cost paths (Etherington 2016),\nConScape (Dorber et al. 2023; Van Moorter et al. 2023)\nCircuitScape https://circuitscape.org/"
+    "text": "How do dingoes connect through the landscape?\n\nWhat are their connectivity pathways and movement corridors?\nWould adding more roads increase or decrease their landscape connectivity?\n\n\nMethods\n\nStep selection functions with simulations (J. Signer et al. 2023; Hofmann et al. 2023; Forrest et al. 2024; Cowan et al. 2025)\nConnectivity analyses\n\nBetweenness/connectivity (Hofmann et al. 2023; Cowan et al. 2025)\nLeast-cost paths (Etherington 2016),\nConScape (Dorber et al. 2023; Van Moorter et al. 2023)\nCircuitScape https://circuitscape.org/"
   },
   {
     "objectID": "research_questions.html#do-dingoes-near-mines-have-a-higher-probability-of-disease-transmission",
     "href": "research_questions.html#do-dingoes-near-mines-have-a-higher-probability-of-disease-transmission",
     "title": "Research Questions",
     "section": "Do dingoes near mines have a higher probability of disease transmission?",
-    "text": "Do dingoes near mines have a higher probability of disease transmission?\n\nDo dingoes near mines revisit the same sites more often, or more often with other individuals?\nAre their social networks more connected?\n\n\nMethods\n\nSocial network analysis\nRevisitation (Bracis, Bildstein, and Mueller 2018)"
+    "text": "Do dingoes near mines have a higher probability of disease transmission?\n\nDo dingoes near mines revisit the same sites more often, such as dumps?\nWhich dingoes interact more often with other individuals?\nAre dingoes at mine sites have more connected social networks?\n\n\nMethods\n\nSocial network analysis\nRevisitation (Bracis, Bildstein, and Mueller 2018)"
   },
   {
     "objectID": "research_questions.html#references",
@@ -153,14 +146,36 @@
     "href": "index.html",
     "title": "ESA2025 Movement Ecology Hackathon: A dingo case study",
     "section": "",
-    "text": "Welcome to the landing page of the ESA2025 workshop - Movement Ecology Hackathon: A dingo case study!\nThis workshop was organised by members of the Ecological Society of Australia’s Movement Ecology Special Interest Network Special Interest Network (MoveSIN). You can view the website of the MoveSIN here, which has a sign-up form, and you can check out the listing on the ESA website here.\nTo get started with the materials for this workshop, visit the Getting Started page.\n\n\n\nPhoto by Alexander Babych - from https://babych.au/wild-and-unfiltered-a-closer-look-at-the-dingoes-of-the-tanami-desert/\n\n\n\nOrganisers\nThis workshop was organised and facilitated by members of the MoveSIN crew:\n\n\n\nSlides\nYou can download a PDF the slides for this workshop here.\n\n\n\nSharing these resources\nFeel free to share these resources! The materials are licensed under aan MIT license, which means you are free to share and adapt the materials as long as you provide appropriate credit.\nYou can cite these resources using:\nForrest S., Meisuria, N., Cairncross, R., Fuik-Burgemeestre, S., Bentley, L., Cowan, M., & Newsome, T. (2025). swforrest/ESA2025_movement_ecology_hackathon: Workshop release (v1.0). Zenodo. https://doi.org/10.5281/zenodo.17635592"
+    "text": "Welcome to the landing page of the ESA2025 workshop - Movement Ecology Hackathon: A dingo case study!\nThis workshop was organised by members of the Ecological Society of Australia’s Movement Ecology Special Interest Network Special Interest Network (MoveSIN). You can view the website of the MoveSIN here, which has a sign-up form, and you can check out the listing on the ESA website here.\nTo get started with the materials for this workshop, visit the Getting Started page.\n\n\n\nPhoto by Alexander Babych - from https://babych.au/wild-and-unfiltered-a-closer-look-at-the-dingoes-of-the-tanami-desert/\n\n\n\nOrganisers\nThis workshop was organised and facilitated by members of the MoveSIN crew:\n\n\n\nSlides\nYou can download a PDF the slides for this workshop here.\n\n\n\nSharing these resources\nFeel free to share these resources! The materials are licensed under aan MIT license, which means you are free to share and adapt the materials as long as you provide appropriate credit.\nYou can cite these resources using:\nForrest, S., Meisuria, N., Cairncross, R., Fuik-Burgemeestre, S., Newsome, T., Bentley, L., & Cowan, M. (2025). swforrest/ESA2025_movement_ecology_hackathon: Workshop release (v1.0). Zenodo. https://doi.org/10.5281/zenodo.17635592"
   },
   {
     "objectID": "methods_scripts/social_networks.html",
     "href": "methods_scripts/social_networks.html",
     "title": "Social Network Analysis",
     "section": "",
-    "text": "References",
+    "text": "An introduction to social network analysis in R - igraph package vignette - https://cran.r-project.org/web/packages/igraph/vignettes/igraph.html\nspatsoc package documentation and tutorials - https://docs.ropensci.org/spatsoc/index.html - Robitaille, A. L., Webber, Q. M. R., & Vander Wal, E. (2019). Conducting social network analysis with animal telemetry data: Applications and methods using spatsoc. Methods in Ecology and Evolution, 10(8), 1203–1211. https://doi.org/10.1111/2041-210x.13215\naniSNA package paper - https://www.biorxiv.org/content/10.1101/2024.05.10.593659v1.full -",
+    "crumbs": [
+      "Methods",
+      "Social Network Analysis"
+    ]
+  },
+  {
+    "objectID": "methods_scripts/social_networks.html#tutorials-and-resources",
+    "href": "methods_scripts/social_networks.html#tutorials-and-resources",
+    "title": "Social Network Analysis",
+    "section": "",
+    "text": "An introduction to social network analysis in R - igraph package vignette - https://cran.r-project.org/web/packages/igraph/vignettes/igraph.html\nspatsoc package documentation and tutorials - https://docs.ropensci.org/spatsoc/index.html - Robitaille, A. L., Webber, Q. M. R., & Vander Wal, E. (2019). Conducting social network analysis with animal telemetry data: Applications and methods using spatsoc. Methods in Ecology and Evolution, 10(8), 1203–1211. https://doi.org/10.1111/2041-210x.13215\naniSNA package paper - https://www.biorxiv.org/content/10.1101/2024.05.10.593659v1.full -",
+    "crumbs": [
+      "Methods",
+      "Social Network Analysis"
+    ]
+  },
+  {
+    "objectID": "methods_scripts/social_networks.html#useful-papers",
+    "href": "methods_scripts/social_networks.html#useful-papers",
+    "title": "Social Network Analysis",
+    "section": "Useful papers",
+    "text": "Useful papers\n(Farine and Whitehead 2015) - Farine, D. R., & Whitehead, H. (2015). Constructing, conducting and interpreting animal social network analysis. The Journal of Animal Ecology, 84(5), 1144–1163. https://doi.org/10.1111/1365-2656.12418\n(Kaur et al. 2024) - Kaur, P., Ciuti, S., Ossi, F., Cagnacci, F., Morellet, N., Loison, A., Atmeh, K., McLoughlin, P., Reinking, A. K., Beck, J. L., Ortega, A. C., Kauffman, M., Boyce, M. S., Haigh, A., David, A., Griffin, L. L., Conteddu, K., Faull, J., & Salter-Townshend, M. (2024). A protocol for assessing bias and robustness of social network metrics using GPS based radio-telemetry data. Movement Ecology, 12(1), 55. https://doi.org/10.1186/s40462-024-00494-6",
     "crumbs": [
       "Methods",
       "Social Network Analysis"
@@ -171,7 +186,18 @@
     "href": "methods_scripts/revisitation.html",
     "title": "Revisitation analysis",
     "section": "",
-    "text": "References",
+    "text": "The recurse R package can be used to analyse revisitation patterns in animal movement data. It provides functions to identify and quantify the number of times an animal returns to specific locations, as well as the duration of stays at those locations. This can be useful for understanding habitat use, foraging behavior, and territoriality.\n\n\nhttps://cran.r-project.org/web/packages/recurse/vignettes/recurse.html",
+    "crumbs": [
+      "Methods",
+      "Revisitation analysis"
+    ]
+  },
+  {
+    "objectID": "methods_scripts/revisitation.html#recurse-package",
+    "href": "methods_scripts/revisitation.html#recurse-package",
+    "title": "Revisitation analysis",
+    "section": "",
+    "text": "The recurse R package can be used to analyse revisitation patterns in animal movement data. It provides functions to identify and quantify the number of times an animal returns to specific locations, as well as the duration of stays at those locations. This can be useful for understanding habitat use, foraging behavior, and territoriality.\n\n\nhttps://cran.r-project.org/web/packages/recurse/vignettes/recurse.html",
     "crumbs": [
       "Methods",
       "Revisitation analysis"

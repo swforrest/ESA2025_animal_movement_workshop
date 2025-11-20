@@ -14,7 +14,7 @@ toc: true
 number-sections: false
 format: 
   html:
-    self-contained: true
+    self-contained: false
     code-fold: show
     code-tools: true
     df-print: paged
@@ -48,9 +48,9 @@ This workshop was organised and facilitated by members of the MoveSIN crew:
 
 # Slides
 
-You can download a PDF the slides for this workshop [here]().
+You can download a PDF the slides for this workshop [here](workshop_slides.pdf).
 
-<!-- ![](images/slide_screenshot.png) -->
+![](workshop_slides.pdf){.pdfview width="100%" height="600px"}
 
 # Sharing these resources
 

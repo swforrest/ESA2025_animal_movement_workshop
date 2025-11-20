@@ -32,9 +32,9 @@ abstract: |
   
 ---
 
-It will be helpful to access the full repository for this workshop, for the data, covariates and any template scripts to get started. 
+It will be helpful to access the full repository for this workshop, for the data, covariates and any template scripts to get started. The resources (and this website) are hosted on GitHub at: <https://github.com/swforrest/ESA2025_movement_ecology_hackathon>.
 
-There are two ways to do this, by **'forking' the repository on GitHub**, or by **downloading the repository as a ZIP file**. If you want to have a copy of the repository on your GitHub account, which you can push any changes to for version control, then choose the first option.
+Here are two preferred ways to get all of the resources (without having to download things individually), 1) by **'forking' the repository on GitHub**, or 2) by **downloading the repository as a ZIP file**. If you want to have a copy of the repository on your GitHub account, which you can push any changes to for version control, then choose the first option.
 
 ## Fork the repository on GitHub
 
