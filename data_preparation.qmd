@@ -56,7 +56,7 @@ dingo_data_sf <- st_as_sf(dingo_data, coords = c("x", "y"), crs = 4326)
 
 ```{r}
 
-artificial_food_locations <- st_read("spatial_layers/artificial_food/Art_Food_W84.shp") 
+artificial_food <- st_read("spatial_layers/artificial_food/Art_Food_W84.shp") 
 artificial_water <- st_read("spatial_layers/artificial_water/ArtWater_W84v2.shp")
 roads <- st_read("spatial_layers/roads/RM_rds_trks_clip.shp") %>% 
   st_transform(crs = st_crs(artificial_food_locations))
@@ -173,14 +173,88 @@ plot(dem)
 
 ```{r}
 
-# create slope layer
-slope <- terra::terrain(dem, v = "slope", unit = "degrees", neighbors = 8)
+# # create slope layer
+# slope <- terra::terrain(dem, v = "slope", unit = "degrees", neighbors = 8)
+# plot(slope)
+# # save the layer
+# terra::writeRaster(slope, "spatial_layers/topography/slope.tif", overwrite = T)
+
+# load slope
+slope <- terra::rast("spatial_layers/topography/slope.tif")
 plot(slope)
 
-# save the layer
-terra::writeRaster(slope, "spatial_layers/topography/slope.tif", overwrite = T)
+```
+
+## Clip the spatial layers to the dingo extent
+
+```{r}
+
+# clip artificial food layer
+artificial_food_clipped <- st_intersection(artificial_food, dingo_extent_sf)
+
+# clip artificial water layer
+artificial_water_clipped <- st_intersection(artificial_water, dingo_extent_sf)
+
+# clip the roads layer
+roads_clipped <- st_intersection(roads, dingo_extent_sf)
 
 ```
+
+## Plot the clipped layers
+
+```{r}
+
+ggplot() +
+  geom_sf(data = roads_clipped, color = "black") +
+  geom_sf(data = artificial_water_clipped, color = "blue") +
+  geom_sf(data = artificial_food_clipped, color = "red") +
+  geom_sf(data = dingo_data_sf, aes(color = as.factor(dog_id)), size = 0.25, alpha = 0.25) +
+  theme_bw()
+
+```
+
+# Create distance covariates
+
+```{r}
+
+# # create distance to artificial food layer
+# artificial_food_raster <- terra::rasterize(vect(artificial_food_clipped), dem, field = 1, background = NA)
+# dist_artificial_food <- terra::distance(artificial_food_raster)
+# plot(dist_artificial_food, main = "Distance to Artificial Food")
+# terra::writeRaster(dist_artificial_food, "spatial_layers/artificial_food/dist_artificial_food.tif", overwrite = T)
+# 
+# # create distance to artificial water layer
+# artificial_water_raster <- terra::rasterize(vect(artificial_water_clipped), dem, field = 1, background = NA)
+# dist_artificial_water <- terra::distance(artificial_water_raster)
+# plot(dist_artificial_water, main = "Distance to Artificial Water")
+# terra::writeRaster(dist_artificial_water, "spatial_layers/artificial_water/dist_artificial_water.tif", overwrite = T)
+# 
+# # create distance to roads layer
+roads_raster <- terra::rasterize(vect(roads_clipped), dem, field = 1, background = NA)
+dist_roads <- terra::distance(roads_raster)
+plot(dist_roads, main = "Distance to Roads")
+terra::writeRaster(dist_roads, "spatial_layers/roads/dist_roads.tif", overwrite = T)
+
+```
+
+## Load distance layers
+
+```{r}
+
+# load distance to artificial food layer
+dist_artificial_food <- terra::rast("spatial_layers/artificial_food/dist_artificial_food.tif")
+plot(dist_artificial_food, main = "Distance to Artificial Food")
+
+# load distance to artificial water layer
+dist_artificial_water <- terra::rast("spatial_layers/artificial_water/dist_artificial_water.tif")
+plot(dist_artificial_water, main = "Distance to Artificial Water")
+
+# load distance to roads layer
+dist_roads <- terra::rast("spatial_layers/roads/dist_roads.tif")
+plot(dist_roads, main = "Distance to Roads")
+
+```
+
 
 # References
 

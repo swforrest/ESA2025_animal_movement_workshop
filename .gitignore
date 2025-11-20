@@ -1,6 +1,6 @@
 # Manually added
 qgis/
-spatial_layers/
+#spatial_layers/
 toms_layers/
 
 # History files
