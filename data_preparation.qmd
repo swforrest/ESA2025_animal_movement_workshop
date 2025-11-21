@@ -35,6 +35,8 @@ abstract: |
 # Load packages
 
 ```{r}
+#| warning: false
+#| message: false
 
 library(tidyverse)
 library(sf)
@@ -63,7 +65,9 @@ roads <- st_read("spatial_layers/roads/RM_rds_trks_clip.shp") %>%
 
 ```
 
-## Plot the shapefiles
+## Plot the shapefiles with dingo GPS data
+
+Dingo locations are shown in a different colour for each ID.
 
 ```{r}
 
